@@ -1,0 +1,58 @@
+*{
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+nav{
+    height: 60px;
+    width: 100%;
+    background-color: #0f1111;
+    display: flex;
+    justify-content: start;
+}
+
+.search{
+    height: 65%;
+    width: 50%;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    align-self: center;
+}
+
+.logo{
+    
+    align-items: center;
+}
+
+.button{
+    align-self: center;
+    height: 39px;
+    width: 40px;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #ffb45f;
+    
+}
+
+.order{
+    align-self: center;
+    font-family: "Amazon Ember",Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px;
+}
+
+div:hover{
+    border: 1px solid white;
+    border-radius: 2px ;
+}
+
+div:active{
+    border: 3px solid orange;
+    border-radius: 2px ;
+}
+div:active::after{
+    border: 1px solid orange;
+    border-radius: 2px ;
+}

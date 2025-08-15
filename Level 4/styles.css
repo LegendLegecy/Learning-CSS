@@ -1,0 +1,102 @@
+* {
+    font-family: 'Times New Roman';
+    font: 300;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    text-align: center;
+}
+
+.container{
+    /* Flex box is important because content in flex box don't exceed from it untill its content allow it. */
+    /* if content in it exceed , elements in flex box container exceed. */
+    display: flex;
+
+    /* Similarly we can also use row (by-default) , row-reverse , column , column-reverse*/
+    flex-direction: row;
+
+    /* main axis        ~  neither x nor y axis , depends on flex direction */
+    /* flex-start       ~  start of main axis  */
+    /* flex-end         ~  end of main axis  */
+    /* center           ~  center of main axis  */
+    /* space-around     ~  space is distributed in elements, last and starting space is half of space between elements.  */
+    /* space-evenly     ~  space is evenly distributed even start , end and between elements. */
+    /* space-between    ~  space is all distributed between elements , no space at start and end. */
+    justify-content: center;
+
+    height: 450px;
+    width: 2000px;
+    border: 10px solid red;
+}
+
+div{
+    font-size: xx-large;
+    color: black;
+    display: inline-block;
+    height: 200px;
+    width:  200px;
+    border: 5px solid rgb(255, 0, 0);
+    margin: 10px;
+}
+
+.box1{
+    background-color: blue;
+
+    /* If we change the alignment of box, it shink with factor of 2 */
+    flex-shrink: 2;
+}
+.box2{
+    background-color: white;
+    
+    /* used to move 1 element of flex box container  */
+    align-self: flex-end ;
+}
+.box3{
+    background-color: aqua;
+    /* If we change the alignment of box, it won't grow or shrink */
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.box4{
+    background-color: pink;
+    align-self: flex-end ;
+}
+.box5{
+    background-color: green;
+    /* If we change the alignment of box, it grow with factor of 2 */
+    flex-grow: 2;
+}
+
+/* if width is 500 */
+@media (width: 500px) {
+    div{
+        background-color: red;
+    }
+    
+}
+
+
+/* width > 400 */
+/* from min 400 to so on */
+@media (min-width: 400px) {
+    div{
+        background-color: blue;
+    }
+    
+}
+
+/* width < 400 */
+/* from 0 to max 400 */
+@media (max-width: 400px) {
+    div{
+        background-color: green;
+    }
+}
+
+/* from 700 to 800 px */
+@media (min-width: 700px) and (max-width: 800px) {
+    div{
+        background-color: rgb(255, 0, 217);
+    }
+    
+}
+

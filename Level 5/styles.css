@@ -1,0 +1,107 @@
+* {
+    font-family: 'Times New Roman';
+    font: 300;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    text-align: center;
+}
+
+div{
+    font-size: xx-large;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    height: 200px;
+    width:  200px;
+    border: 5px solid rgb(255, 0, 0);
+    background-color: black;
+    margin: 10px;
+    
+    /* transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s; */
+    
+    /* Transition shorthand */
+    /*          Property    Duration    Timing Function    Delay */
+    transition:   all           1s           linear          0.5s;
+}
+
+/* hover state ~ move cursor  */
+div:hover{
+    color: black;
+    background-color: aqua;
+    font-size: 20px;
+}
+
+/* active state ~ click */
+div:active{
+    color: black;
+    background-color: rgb(0, 255, 64);
+}
+
+span{
+    display: inline-block;
+    font-size: xx-large;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    height: 200px;
+    width:  200px;
+    border: 5px solid rgb(255, 0, 0);
+    transition: all 1s linear 0s;
+}
+
+.rotate:hover{
+/* transform: rotate(720deg); */
+/* rotate: x 720deg; */
+rotate: y 720deg;
+
+/* scale ~ Size change */
+/* scaleX ~ Size change in X axis */
+/* scaleY ~ Size change in Y axis */
+transform: scale(4);
+
+}
+
+.translate:hover{
+    /* transform: translate(1000px); */
+    transform: translate(100px , 100px );
+}
+
+.skew:hover{
+    transform: skew(45deg);
+}
+
+
+@keyframes ColorChanger {
+    /* from{
+        background-color: black;
+    }
+    to{
+        background-color: red;
+    } */
+    0%{
+        background-color: black;
+        left: 0px;
+    }
+    50%{
+        background-color: blue;
+        left: 100px;
+    }
+    100%{
+        background-color: red;
+        left: 200px;
+    }
+}
+
+.animation{
+    /*animation-name: ColorChanger;
+    animation-duration: 5s ;
+    animation-timing-function: ease-in;
+    animation-delay: 0s;
+    animation-iteration-count: infinite ;
+    animation-direction:alternate; */
+    
+    position: relative;
+    animation: ColorChanger 5s linear 0s infinite alternate;
+}
+

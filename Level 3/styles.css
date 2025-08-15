@@ -1,0 +1,122 @@
+* {
+    font-family: 'Times New Roman';
+    font: 300;
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+
+#box1{
+    height: 500px;
+
+    /* 50vw ~ 50% of viewport width (screen width) */
+    /* vh ~ viewport height */
+    width: 50vw;
+    background-color: green;
+    font-size: 50px;
+}
+
+#box2{
+    /* 2em ~ 2 times of parent's font-size */
+    font-size: 2em;
+    
+    /* 2em ~ 2 times of itself's font-size */
+    width: 2em;
+
+    /* 1.5rem ~ 1.5 times of outermost element's font size (usually body ; font-size = 16px */
+    border: 1.5rem solid black;
+    
+    color: black;
+    height: 200px;
+    width: 200px;
+    /* width: 30%; */
+    margin: 25%;
+    background-color: yellow;
+}
+
+span{
+    display: inline-block;
+    color: black;
+    height: 200px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.box1{
+    /* No changes in static */
+    position: static;
+    left: 500px;
+    background-color: red;
+    /* it won't work */
+    z-index: 1;
+}
+
+.box2{
+    /* Changes occur with respect to previous element and none other element occcupy its previous space */
+    /* Changes position to absoloute for understanding concept. */
+    position: relative;
+    left: 20px;
+    bottom: 20px;
+    background-color: green;
+}
+
+.box3{
+    /* Removed from the flow and other elements took its place. */
+    /* Changes occure with respect to non-static positioned ancesstors. */
+    position: absolute;
+    left: 1000px;
+    background-color: blue;
+}
+
+.box4{
+    /* Remove from flow and changes occur with respect to body. */
+    /* It feels like it fixed on screen */
+    position: fixed;
+    top: 1vh;
+    right: 1vh;
+    z-index: 3;
+    background-image: url(img.jpeg);
+    background-size: cover;
+}
+
+.box5{
+    /* It sticks after we scroll through it. */
+    position: sticky;
+    top: 150px;
+    left: 20px;
+    background-color: pink;
+}
+
+/* unsplash.com for pics */
+
+.img1{
+    height: 300px;
+    width: 300px;
+    display: inline-block;
+    margin: 50px;
+    background-image: url(img.jpeg);
+    /* Covers the whole body of element */
+    /* But maybe not completely visible */
+    background-size: cover;
+}
+
+.img2{
+    height: 300px;
+    width: 300px;
+    display: inline-block;
+    margin: 50px;
+    background-image: url(img.jpeg);
+    /* Covers the whole body of element */
+    /* And whole image is completely visible but repition occurs */
+    background-size: contain;
+}
+
+.img3{
+    height: 300px;
+    width: 300px;
+    display: inline-block;
+    margin: 50px;
+    background-image: url(img.jpeg);
+    /* Automatically image is places with respect to image's height and width */
+    background-size: auto;
+}

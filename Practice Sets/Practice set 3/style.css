@@ -1,0 +1,55 @@
+*{
+    font-family: 'Times New Roman';
+    font: 300;
+    color: rgb(255, 255, 255);
+    background-color: black;
+}
+h2{
+    text-align: center;
+}
+div{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+nav{
+    height: 60px;
+    width: 1300px;
+    border: 5px solid white;
+    background-color: #0f1111;
+}
+
+a{
+    text-decoration: none;
+}
+
+.title{
+    font-size: 25px;
+    background-color: #0f1111;
+    font-size: large;
+    color: orange;
+    width: 100px;
+    text-align: left;
+    margin-top:0px ;
+    margin-bottom:0px ;
+    margin-right: 100px ;
+
+}
+
+.other{
+    background-color: #0f1111;
+    width: 100px;
+    margin: 0px 100px 0px 100px;
+    padding: 0px ;
+}
+
+button{
+    background-color: #f08804;
+}
+
+input{
+    background-color: white;
+    color:gray;
+}
